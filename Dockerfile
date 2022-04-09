@@ -49,6 +49,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     emacs \
     screen \
     socat \
+    ros-melodic-usb-cam \
     && rm -rf /var/lib/apt/lists/*
 
 
