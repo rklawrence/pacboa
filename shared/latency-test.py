@@ -15,8 +15,8 @@ import serial
 
 ser = serial.Serial()
 #Serial port being used
-ser.port="/dev/tty_serial_bridge"
-ser.baudrate=115200
+ser.port="/dev/ttyACM0"
+ser.baudrate=57600
 #timeout in seconds, 0 to return immediately, don't set to do blocking
 ser.timeout = 0
 

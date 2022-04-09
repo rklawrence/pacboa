@@ -1,0 +1,7 @@
+set(lab3_SETUP_PY_SETUP_MODULE "distutils.core")
+set(lab3_SETUP_PY_VERSION "0.0.0")
+set(lab3_SETUP_PY_SCRIPTS "")
+set(lab3_SETUP_PY_PACKAGES "lab3")
+set(lab3_SETUP_PY_PACKAGE_DIRS "scripts/lab3")
+set(lab3_SETUP_PY_MODULES "")
+set(lab3_SETUP_PY_MODULE_DIRS "")

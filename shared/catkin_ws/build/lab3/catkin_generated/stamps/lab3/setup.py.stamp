@@ -1,0 +1,15 @@
+# this file helps make "lab3" an installable package.
+# helps with importing things like from lab3.node etc...
+
+# imports - setup imports
+from distutils.core import setup
+from catkin_pkg.python_setup import generate_distutils_setup
+
+# generate the distutils for this package.
+# for more info on distutils - https://docs.python.org/3/library/distutils.html
+d = generate_distutils_setup(
+    packages = ["lab3"],
+    package_dir = { "": "scripts" }
+)
+
+setup(**d)
