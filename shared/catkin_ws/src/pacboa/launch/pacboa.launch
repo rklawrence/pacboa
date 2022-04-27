@@ -1,0 +1,23 @@
+<launch>
+	<node
+		pkg="balboa_core"
+		name="balboa_node"
+		type="balboa_serial.py"
+		output="screen"/>
+
+	<include
+		file="$(find landmark_self_sim)/launch/landmarkSelfSimNoCam.launch">
+		<!-- <arg name="output" value="log"/> -->
+
+	</include>
+
+	<include
+		file="$(find ball_detector)/launch/ballDetectorWithCamera.launch"/>
+
+	<node
+		pkg="pacboa"
+		name="pacboa"
+		type="pacboa.py"
+		output="screen"/>
+
+</launch>

@@ -1,0 +1,15 @@
+<launch>
+	<node
+		pkg="balboa_core"
+		name="balboa_node"
+		type="balboa_serial.py"/>
+	<node
+		pkg="turtlesim"
+		name="turtlesim_keyboard"
+		type="turtle_teleop_key"/>
+
+	<node
+		pkg="pacboa"
+		name="keyboard_control"
+		type="keyboard_control.py"/>
+</launch>
